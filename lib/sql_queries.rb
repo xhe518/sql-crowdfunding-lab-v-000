@@ -12,7 +12,7 @@ FROM projects
 LEFT JOIN pledges ON projects.id = pledges.project_id
 LEFT JOIN users ON pledges.user_id = users.id
 GROUP BY projects.id
-ORDER BY users.name"
+ORDER BY users.name;"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
